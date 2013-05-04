@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SaveyDashboard</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<%= tabs_tag do |tab| %>
+  		<%= tab.home      	'Homepage', root_path %>
+  		<%= tab.maps 		'Maps', maps_index_path %>
+  		<%= tab.statistics	'Statistics', statistics_index_path %>
+	<% end %>
+  	<title>SaveyDashboard</title>
+  	<%= stylesheet_link_tag    "application", :media => "all" %>
+  	<%= javascript_include_tag "application" %>
+  	<%= csrf_meta_tags %>
 </head>
 <body>
 
