@@ -1,9 +1,99 @@
 <h1>Listing statistics</h1>
+<script type="text/javascript">
+$(function () {
+    $('#bar_chart').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'What\'s your sex?'
+        },
+        xAxis: {
+            categories: ['Male', 'Female']
+        },
+        yAxis: {
+            title: {
+                text: 'Amount'
+            }
+        },
+        series: [{
+            data: [342, 359]
+        }]
+    });
+});
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+$(function () {
+    $('#pie_chart_female').highcharts({
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Female sex distribution?'
+        },
+        xAxis: {
+            categories: ['University', 'Business', 'Travel']
+        },
+        yAxis: {
+            title: {
+                text: 'Males'
+            }
+        },
+        series: [{
+            data: [342, 359, 450]
+        }]
+    });
+});
+
+$(function () {
+
+var colors = Highcharts.getOptions().colors,
+            categories = ['University', 'Business', 'Travel'],
+            name = 'Male sex distribution';
+var malesData = [];
+// add browser data
+            malesData = [
+            {
+                name: 'University',
+                y: 14,
+                color: Highcharts.getOptions().colors[0]
+            },
+            {
+                name: 'Business',
+                y: 56,
+                color: Highcharts.getOptions().colors[1]
+            },
+            {
+                name: 'Travel',
+                y: 30,
+                color: Highcharts.getOptions().colors[2]
+            }];
+
+    $('#pie_chart_male').highcharts({
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Male sex distribution?'
+        },
+        yAxis: {
+            title: {
+                text: 'Males distribution'
+            }
+        },
+        plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%']
+                }
+            },
+        series: [{
+            data: malesData
+        }]
+    });
+});
+</script>
+<div id="bar_chart" style="height: 300px"></div>
+<br>
+<div id="pie_chart_male" style="height: 300px; float: left"></div>
+<div id="pie_chart_female" style="height: 300px; float: left"></div>
 </table>
