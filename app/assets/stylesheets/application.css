@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+.menu li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}

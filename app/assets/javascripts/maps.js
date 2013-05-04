@@ -14,8 +14,21 @@ function initializeMap(coords) {
     for (var i = coords.length - 1; i >= 0; i--) {
     	var marker = new google.maps.Marker({    
       		position: new google.maps.LatLng(coords[i]['lat'], coords[i]['lon']),    
-      		map: map    
+      		map: map ,
+	      	title: 'Vending Machine'   
     	}); 
+
+    	  var contentString = '<div id="content" style="width: 200px;">'+
+    	  							'This vending machine sells coffees. Surveys: sex, musical tastes, etc'+
+      							'</div>';
+
+	  var infowindow = new google.maps.InfoWindow({
+	      content: contentString
+	  });
+
+	  google.maps.event.addListener(marker, 'click', function() {
+	    infowindow.open(map,marker);
+	  });
     };      
 }
 
