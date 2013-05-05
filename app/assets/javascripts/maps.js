@@ -21,7 +21,7 @@ function initializeMap(coords) {
     	  var contentString = '<div id="content" style="width: 400px;">'+
     	  					  '<span style="font-weight: bold">Snack Vending Machine</span><br/>'+
     	  					  '<span style="font-weight: bold">Location: </span>Technical University of Berlin<br/>'+
-    	  					  '<span style="font-weight: bold">Surveys: </span> sex, musical tastes, etc'+
+    	  					  '<span style="font-weight: bold">Surveys: </span> Travels, Loan'+
       						  '</div>';
 
 	  var infowindow = new google.maps.InfoWindow({
