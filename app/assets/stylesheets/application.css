@@ -35,18 +35,98 @@ h1 {
 	border: 3px #8B4513 solid;
 }
 
-.menu {
-	width: 260px;
-	margin: auto;
-}
-
-.menu li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;
+#logo {
+	display: table-row;
+	float: left;
+	margin-left: 30px;
 }
 
 .content {
-    width: 955px;
+	display: table;
+}
+
+ul.menu {
+	clear: right;
+	display: table-row;
+	float:left;
+	width:490px;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+
+.menu a {
+	float:left;
+	text-decoration:none;
+}
+
+#tabs a {
+	width:149px;
+	height: 133px;
+}
+
+#tabs {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px #8B4513 solid;
+}
+
+#tasks a {
+	text-decoration: none;
+	font-family: 'Cuecafont';
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	text-transform: none;
+	padding-top: 30px;
+}
+
+#tasks a:hover {
+	background-color: #996633;
+}
+
+#tasks {
+	width: 900px;
+	margin-top: 10px;
+}
+
+#tasks a {
+	width: 450px;
+	height: 50px;
+	text-align: center;
+}
+
+.menu #home a {
+	background: url(web_tab_sx.png) no-repeat top left;
+}
+
+.menu #statistics a {
+	background: url(web_tab_center.png) no-repeat top left;
+}
+
+.menu #maps a {
+	background: url(web_tab_dx.png) no-repeat top left;
+}
+
+.menu #home a:hover {
+	background: url(web_tab_sx_DOWN.png) no-repeat top left;
+}
+
+.menu #statistics a:hover {
+	background: url(web_tab_center_DOWN.png) no-repeat top left;
+}
+
+.menu #maps a:hover {
+	background: url(web_tab_dx_DOWN.png) no-repeat top left;
+}
+
+.menu li {
+	display:inline;
+}
+
+.content {
+    width: 900px;
     margin: auto;
 }
