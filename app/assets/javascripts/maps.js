@@ -18,9 +18,11 @@ function initializeMap(coords) {
 	      	title: 'Vending Machine'   
     	}); 
 
-    	  var contentString = '<div id="content" style="width: 200px;">'+
-    	  							'This vending machine sells coffees. Surveys: sex, musical tastes, etc'+
-      							'</div>';
+    	  var contentString = '<div id="content" style="width: 400px;">'+
+    	  					  '<span style="font-weight: bold">Snack Vending Machine</span><br/>'+
+    	  					  '<span style="font-weight: bold">Location: </span>Technical University of Berlin<br/>'+
+    	  					  '<span style="font-weight: bold">Surveys: </span> sex, musical tastes, etc'+
+      						  '</div>';
 
 	  var infowindow = new google.maps.InfoWindow({
 	      content: contentString

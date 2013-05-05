@@ -12,9 +12,26 @@
  *= require_tree .
  */
 
-.menu li
-{
-display: inline;
-list-style-type: none;
-padding-right: 20px;
+h1 {
+	margin : auto;
+	padding-top: 30px;
+	height: 100px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.menu {
+	width: 300px;
+	margin: auto;
+}
+
+.menu li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.content {
+    width: 955px;
+    margin: auto;
 }
