@@ -12,16 +12,31 @@
  *= require_tree .
  */
 
+@font-face { 
+	font-family: 'Cuecafont'; 
+	src: url('cuecafont.ttf'); 
+} 
+
+body {
+	background: url(bkg.png) repeat top left;
+}
+
 h1 {
 	margin : auto;
 	padding-top: 30px;
 	height: 100px;
 	text-align: center;
 	vertical-align: center;
+	font-family: 'Cuecafont';
+}
+
+.framed {
+	margin: auto;
+	border: 3px #8B4513 solid;
 }
 
 .menu {
-	width: 300px;
+	width: 260px;
 	margin: auto;
 }
 
